@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="bdd.runners.TestRunner" time="11.094" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.10+11-LTS-240"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\yebabu\TestAutomation_Copilot\DemoAutomation_GenAI\my-maven-project"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\yebabu\TestAutomation_Copilot\DemoAutomation_GenAI\my-maven-project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\yebabu\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="classworlds.conf" value="C:\Program Files\APACHE-MAVEN-3.8.5\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-17\lib;C:\Program Files\APACHE-MAVEN-3.8.5;C:\Program Files\APACHE-MAVEN-3.8.5\bin;C:\Program Files\Eclipse Adoptium\jdk-19.0.2.7-hotspot\bin;C:\Program Files\APACHE-MAVEN-3.8.5\bin;C:\Program Files\APACHE-MAVEN-3.8.5\bin;C:\Program Files\Java\jdk-17;\bin;C:\Program Files\APACHE-MAVEN-3.8.5;\bin;C:\Program Files\Git\cmd;C:\Users\yebabu\AppData\Local\Microsoft\WindowsApps;C:\Users\yebabu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\yebabu\AppData\Roaming\npm;C:\Users\yebabu\AppData\Local\Android\Sdk\platform-tools;C:\Users\yebabu\AppData\Local\Android\Sdk;C:\Users\yebabu\AppData\Local\Android\Sdk\cmdline-tools\latest\bin;C:\Users\yebabu\AppData\Local\Android\Sdk\Sdk;;c:\Users\yebabu\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="maven.conf" value="C:\Program Files\APACHE-MAVEN-3.8.5/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\APACHE-MAVEN-3.8.5\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\yebabu"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="yebabu"/>
+    <property name="java.class.path" value="C:\Program Files\APACHE-MAVEN-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\Program Files\APACHE-MAVEN-3.8.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Search and select health insurance on Policy Bazaar" name="User searches for Policy Bazaar and selects Health Insurance" time="5.907">
+    <error message="The step &apos;the user searches for &quot;Policy Bazaar&quot;&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;the user searches for {string}&quot;)
+public void the_user_searches_for(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user should see the search results&quot;)
+public void the_user_should_see_the_search_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user selects the {string} link&quot;)
+public void the_user_selects_the_link(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user navigates to the Policy Bazaar homepage&quot;)
+public void the_user_navigates_to_the_policy_bazaar_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &apos;the user searches for &quot;Policy Bazaar&quot;&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;the user searches for {string}&quot;)
+public void the_user_searches_for(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user should see the search results&quot;)
+public void the_user_should_see_the_search_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user selects the {string} link&quot;)
+public void the_user_selects_the_link(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user navigates to the Policy Bazaar homepage&quot;)
+public void the_user_navigates_to_the_policy_bazaar_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+Scenario: User searches for Policy Bazaar and selects Health Insurance # src/test/java/bdd/features/Loginfunctionality.feature:3
+  Given the user is on the Google homepage                             # bdd.stepdefinitions.LoginSteps.theUserIsOnTheGoogleHomepage()
+  When the user searches for &quot;Policy Bazaar&quot;
+  Then the user should see the search results
+  And the user selects the &quot;Policy Bazaar&quot; link
+  And the user navigates to the Policy Bazaar homepage
+</system-out>
+    <system-err>[main] INFO browsersetup.StartBrowser - ChromeDriver path set.
+[main] INFO browsersetup.StartBrowser - Chrome options set.
+Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 51421
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 51421.
+Jan 15, 2025 10:00:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jan 15, 2025 10:00:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, so returning the closest version found: a no-op implementation
+Jan 15, 2025 10:00:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 131.
+Jan 15, 2025 10:00:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
+[main] INFO browsersetup.StartBrowser - ChromeDriver instance created.
+</system-err>
+  </testcase>
+  <testcase classname="Search and select health insurance on Policy Bazaar" name="User navigates to Google search" time="5.187">
+    <error message="element not interactable
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;LIN-CWHX6G3&apos;, ip: &apos;192.168.29.142&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5bfa9848d5fbc4008b03b9f34adf38b, clickElement {id=f.D3B833F496DDD836CABE53A6646B7DCC.d.832170C0511D2ABC5B68A314ED304743.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62441/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a5bfa9848d5fbc4008b03b9f34adf38b)] -&gt; name: btnK]
+Session ID: a5bfa9848d5fbc4008b03b9f34adf38b" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;LIN-CWHX6G3&apos;, ip: &apos;192.168.29.142&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5bfa9848d5fbc4008b03b9f34adf38b, clickElement {id=f.D3B833F496DDD836CABE53A6646B7DCC.d.832170C0511D2ABC5B68A314ED304743.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62441/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a5bfa9848d5fbc4008b03b9f34adf38b)] -&gt; name: btnK]
+Session ID: a5bfa9848d5fbc4008b03b9f34adf38b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bdd.stepdefinitions.LoginSteps.theUserClicksTheSearchButton(LoginSteps.java:34)
+	at ✽.the user clicks the search button(file:///C:/Users/yebabu/TestAutomation_Copilot/DemoAutomation_GenAI/my-maven-project/src/test/java/bdd/features/Loginfunctionality.feature:13)
+</error>
+    <system-out>
+Scenario: User navigates to Google search                         # src/test/java/bdd/features/Loginfunctionality.feature:10
+  Given the user is on the Google homepage                        # bdd.stepdefinitions.LoginSteps.theUserIsOnTheGoogleHomepage()
+  When the user enters &quot;Policy Bazaar&quot; in the search bar          # bdd.stepdefinitions.LoginSteps.theUserEntersInTheSearchBar(java.lang.String)
+  And the user clicks the search button                           # bdd.stepdefinitions.LoginSteps.theUserClicksTheSearchButton()
+      org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;LIN-CWHX6G3&apos;, ip: &apos;192.168.29.142&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5bfa9848d5fbc4008b03b9f34adf38b, clickElement {id=f.D3B833F496DDD836CABE53A6646B7DCC.d.832170C0511D2ABC5B68A314ED304743.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62441/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a5bfa9848d5fbc4008b03b9f34adf38b)] -&gt; name: btnK]
+Session ID: a5bfa9848d5fbc4008b03b9f34adf38b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bdd.stepdefinitions.LoginSteps.theUserClicksTheSearchButton(LoginSteps.java:34)
+	at âœ½.the user clicks the search button(file:///C:/Users/yebabu/TestAutomation_Copilot/DemoAutomation_GenAI/my-maven-project/src/test/java/bdd/features/Loginfunctionality.feature:13)
+
+  Then the user should see the search results for &quot;Policy Bazaar&quot; # bdd.stepdefinitions.LoginSteps.theUserShouldSeeTheSearchResultsFor(java.lang.String)
+</system-out>
+    <system-err>[main] INFO browsersetup.StartBrowser - ChromeDriver path set.
+[main] INFO browsersetup.StartBrowser - Chrome options set.
+Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 62607
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 62607.
+Jan 15, 2025 10:00:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jan 15, 2025 10:00:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, so returning the closest version found: a no-op implementation
+Jan 15, 2025 10:00:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 131.
+Jan 15, 2025 10:00:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
+[main] INFO browsersetup.StartBrowser - ChromeDriver instance created.
+</system-err>
+  </testcase>
+</testsuite>

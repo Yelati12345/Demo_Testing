@@ -1,0 +1,38 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  MAVEN_OPTS: '-Xmx1024m'
+
+steps:
+  - task: UseJava@1
+    inputs:
+      versionSpec: '11'
+      jdkArchitecture: 'x64'
+
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean install'
+      options: '-DskipTests'
+
+  - script: |
+      echo "Running tests in headless mode"
+      mvn test -Dbrowser=headless
+    displayName: 'Run tests'
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      mergeTestResults: true
+      testRunTitle: 'Maven Test Results'
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: 'JaCoCo'
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/target/site/jacoco/jacoco.xml'
+      reportDirectory: '$(System.DefaultWorkingDirectory)/target/site/jacoco'
+      failIfCoverageEmpty: true

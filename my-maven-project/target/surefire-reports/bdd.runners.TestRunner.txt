@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Test set: bdd.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 12.076 sec <<< FAILURE!
+User searches for Policy Bazaar and selects Health Insurance(Search and select health insurance on Policy Bazaar)  Time elapsed: 5.907 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'the user searches for "Policy Bazaar"' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("the user searches for {string}")
+public void the_user_searches_for(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the search results")
+public void the_user_should_see_the_search_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user selects the {string} link")
+public void the_user_selects_the_link(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user navigates to the Policy Bazaar homepage")
+public void the_user_navigates_to_the_policy_bazaar_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+User navigates to Google search(Search and select health insurance on Policy Bazaar)  Time elapsed: 5.187 sec  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.265)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'LIN-CWHX6G3', ip: '192.168.29.142', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5bfa9848d5fbc4008b03b9f34adf38b, clickElement {id=f.D3B833F496DDD836CABE53A6646B7DCC.d.832170C0511D2ABC5B68A314ED304743.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62441/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a5bfa9848d5fbc4008b03b9f34adf38b)] -> name: btnK]
+Session ID: a5bfa9848d5fbc4008b03b9f34adf38b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bdd.stepdefinitions.LoginSteps.theUserClicksTheSearchButton(LoginSteps.java:34)
+	at ?.the user clicks the search button(file:///C:/Users/yebabu/TestAutomation_Copilot/DemoAutomation_GenAI/my-maven-project/src/test/java/bdd/features/Loginfunctionality.feature:13)
+
