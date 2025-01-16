@@ -8,28 +8,33 @@ variables:
   MAVEN_OPTS: '-Xmx1024m'
 
 steps:
-  - task: UseJava@1
+  # Use Java with the built-in Java installer task
+  - task: JavaToolInstaller@1
     inputs:
       versionSpec: '11'
       jdkArchitecture: 'x64'
 
+  # Use Maven to build the project
   - task: Maven@3
     inputs:
       mavenPomFile: 'pom.xml'
       goals: 'clean install'
       options: '-DskipTests'
 
+  # Run tests in headless mode
   - script: |
       echo "Running tests in headless mode"
       mvn test -Dbrowser=headless
     displayName: 'Run tests'
 
+  # Publish test results
   - task: PublishTestResults@2
     inputs:
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       mergeTestResults: true
       testRunTitle: 'Maven Test Results'
 
+  # Publish code coverage results
   - task: PublishCodeCoverageResults@1
     inputs:
       codeCoverageTool: 'JaCoCo'
