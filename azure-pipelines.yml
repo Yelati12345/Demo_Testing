@@ -8,11 +8,12 @@ variables:
   MAVEN_OPTS: '-Xmx1024m'
 
 steps:
-  # Use Java with the built-in Java installer task
-  - task: JavaToolInstaller@1
-    inputs:
-      versionSpec: '11'
-      jdkArchitecture: 'x64'
+  # Set JAVA_HOME to use Java 11
+  - script: |
+      echo "Setting Java version to 11"
+      sudo update-java-alternatives --set java-1.11.0-openjdk-amd64
+      java -version
+    displayName: 'Set Java Version'
 
   # Use Maven to build the project
   - task: Maven@3
