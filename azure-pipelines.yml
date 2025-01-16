@@ -17,7 +17,7 @@ steps:
   # Use Maven to build the project
   - task: Maven@3
     inputs:
-      mavenPomFile: 'my-maven-folder/pom.xml'
+      mavenPomFile: 'pom.xml'
       goals: 'clean install'
       options: '-DskipTests'
 
