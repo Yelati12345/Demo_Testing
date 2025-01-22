@@ -1,0 +1,41 @@
+Functional Requirements:
+User Registration and Authentication:
+
+Allow new users to register using email, phone number, or social media accounts.
+Implement secure login mechanisms with two-factor authentication.
+Profile Management:
+
+Enable users to create and manage their profiles, including personal details, family members, and existing health conditions.
+Support uploading necessary documents like ID proofs, medical history, and prescriptions.
+Plan Search and Comparison:
+
+Provide a searchable database of health insurance plans based on filters like coverage amount, premium, age group, and pre-existing conditions.
+Offer side-by-side plan comparison for benefits, exclusions, and premiums.
+Premium Calculator:
+
+Include a dynamic premium calculator that factors in age, coverage amount, family members, and existing health conditions.
+Plan Details:
+
+Display detailed plan information, including coverage benefits, exclusions, waiting periods, and network hospitals.
+Proposal Form Submission:
+
+Allow users to fill and submit a digital proposal form for the selected plan.
+Validate user inputs to ensure all required details are provided.
+Payment Integration:
+
+Support multiple payment options (credit/debit cards, UPI, net banking, EMI).
+Provide secure payment processing with real-time confirmation.
+Policy Issuance:
+
+Generate and deliver the policy document digitally post-purchase.
+Send confirmation via email and SMS with a policy number and contact details for support.
+Claims Assistance:
+
+Offer a guided claims process, including uploading required documents and tracking claims in real-time.
+Customer Support:
+
+Provide chat, email, and call support for queries related to plans, claims, and technical issues.
+Notifications:
+
+Send reminders for premium renewals and health check-ups.
+Notify users about policy updates, offers, and claim status.

@@ -157,15 +157,15 @@ public class ExcelUtility {
             switch (headerType.toLowerCase()) {
                 case "response":
                     header = """
-                            Use the below template in table format
+                            Use the below template in a excel table format
                             Design document version\tSheet name\tResponse Items\tAPI Response (Expected Result)\tTest Case ID\tPass/Fail\tExecuted by\tDefect ID
                             """;
                     break;
                 case "request":
                     header = """
-                            Use the below template in table format
+                            Use the below template in a excel table format
                             Design document version\tSheet name\tRequest Items\tData Variations\tExpected Result\tTest Case ID\tPass/Fail\tRequest body\tTested By\tComments\tDefect ID
-                            """;
+                             """;
                     break;
                 case "businesslogic":
                     header = """
@@ -174,8 +174,8 @@ public class ExcelUtility {
                     break;
                 default:
                     header = """
-                            Use the below template in table format
-                            Design document version\tSheet name\tRequest Items\tData Variations\tExpected Result\tTest Case ID\tPass/Fail\tRequest body\tTested By\tComments\tDefect ID
+                            Use the below template in a excel table format
+                            TestCase ID\tTest Description\tActual Result \tExpected Result\tPass/Fail\tTested By\tComments\tDefect ID
                             """;
                     break;
             }

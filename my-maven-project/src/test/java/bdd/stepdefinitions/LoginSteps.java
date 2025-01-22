@@ -26,7 +26,7 @@ public class LoginSteps {
     @Given("the user is on the Google homepage")
     public void theUserIsOnTheGoogleHomepage() {
         if (driver == null) {
-            driver = startBrowser.startBrowser("headless");
+            driver = startBrowser.startBrowser("Chrome");
             logger.info("Chrome options set.");
         }
         assertNotNull("Driver initialization failed", driver);
