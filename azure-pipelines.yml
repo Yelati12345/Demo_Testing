@@ -7,30 +7,43 @@ trigger:
   - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
+
+variables:
+  MAVEN_OPTS: '-Xmx1024m'
 
 steps:
-  # Install Java JDK 11
+  # Install Java
   - task: JavaToolInstaller@0
     inputs:
       versionSpec: '11'
       jdkArchitecture: 'x64'
       jdkSourceOption: 'PreInstalled'
-      
-  # List repository files for debugging purposes
-  - script: ls -R /home/vsts/work/1/s
-    displayName: 'List repository files'
 
-  # Run Maven build
+  # Run Maven Build
   - task: Maven@3
     inputs:
-      mavenPomFile: 'DemoAutomation_GenAI/my-maven-project/pom.xml' # Adjust path as needed
-      goals: 'clean test'
-      mavenOptions: '-Xmx3072m'
-      javaHomeOption: 'JDKVersion'
-      jdkVersion: '11'
-      jdkArchitecture: 'x64'
-      mavenVersionOption: 'Default'
-      mavenAuthenticateFeed: false
-      publishJUnitResults: true
+      mavenPomFile: 'pom.xml'
+      goals: 'clean install'
+      options: '-DskipTests'
+
+  # Run Tests
+  - script: |
+      echo "Running tests in headless mode"
+      mvn test -Dbrowser=headless
+    displayName: 'Run tests'
+
+  # Publish Test Results
+  - task: PublishTestResults@2
+    inputs:
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      mergeTestResults: true
+      testRunTitle: 'Maven Test Results'
+
+  # Publish Code Coverage Results
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: 'JaCoCo'
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/target/site/jacoco/jacoco.xml'
+      reportDirectory: '$(System.DefaultWorkingDirectory)/target/site/jacoco'
+      failIfCoverageEmpty: true
