@@ -20,7 +20,7 @@ steps:
 
   - task: Maven@4
     inputs:
-      mavenPomFile: 'DemoAutomation_GenAI\my-maven-project\pom.xml'
+      mavenPomFile: 'DemoAutomation_GenAI/my-maven-project/pom.xml'
       goals: 'clean test'
       mavenOptions: '-Xmx3072m'
       javaHomeOption: 'JDKVersion'
