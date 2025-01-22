@@ -17,7 +17,7 @@ steps:
   - task: JavaToolInstaller@0
     inputs:
       versionSpec: '11'
-      jdkArchitecture: 'x64'
+      jdkArchitecture: 'x64' # Correct input key
       jdkSourceOption: 'PreInstalled'
 
   # Run Maven Build
