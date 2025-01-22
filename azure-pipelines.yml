@@ -1,4 +1,3 @@
-
 # Maven
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
@@ -11,21 +10,26 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+  # Install Java JDK 11
   - task: JavaToolInstaller@0
     inputs:
       versionSpec: '11'
-      jdkArchitectureOption: 'x64'
+      jdkArchitecture: 'x64'
       jdkSourceOption: 'PreInstalled'
+      
+  # List repository files for debugging purposes
+  - script: ls -R /home/vsts/work/1/s
+    displayName: 'List repository files'
 
-
-  - task: Maven@4
+  # Run Maven build
+  - task: Maven@3
     inputs:
-      mavenPomFile: 'DemoAutomation_GenAI/my-maven-project/pom.xml'
+      mavenPomFile: 'DemoAutomation_GenAI/my-maven-project/pom.xml' # Adjust path as needed
       goals: 'clean test'
       mavenOptions: '-Xmx3072m'
       javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '11'
-      jdkArchitectureOption: 'x64'
+      jdkVersion: '11'
+      jdkArchitecture: 'x64'
       mavenVersionOption: 'Default'
       mavenAuthenticateFeed: false
       publishJUnitResults: true
